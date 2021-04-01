@@ -1,0 +1,10 @@
+
+#Parametes available at: https://github.com/helm/charts/tree/master/stable/mysql
+persistence:
+  size: 20Gi
+
+service:
+  type: LoadBalancer
+  annotations:
+    alpha.dasdasdsad: "Bullshit value"
+

@@ -1,0 +1,5 @@
+replicaCount: 3
+service:
+  type: LoadBalancer 
+  annotations:
+    alpha.dasdasdsad: "Bullshit value"
