@@ -3,7 +3,7 @@
 NAMESPACE="jlpedrosa"
 #this step is not necesary fro groupon
 #kubectl create namespace "$NAMESPACE"
-# kubectl config set-context --current --namespace="$NAMESPACE"
+kubectl config set-context --current --namespace="$NAMESPACE"
 
 helm install -f mysql/helmparams.yaml poc-mysql stable/mysql
 helm install -f nifi/helmvalues.yaml poc-nifi cetic/nifi
