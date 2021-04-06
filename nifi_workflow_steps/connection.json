@@ -1,0 +1,31 @@
+{
+    "revision": {
+        "clientId": "TO_BE_UPDATED",
+        "version": 0
+    },
+    "disconnectedNodeAcknowledged": false,
+    "component": {
+        "name": "",
+        "source": {
+            "id": "SOURCE_COMPONENT",
+            "groupId": "ROOT_ID",
+            "type": "PROCESSOR"
+        },
+        "destination": {
+            "id": "DST_COMPONENT",
+            "groupId": "ROOT_ID",
+            "type": "PROCESSOR"
+        },
+        "selectedRelationships": [
+            "success"
+        ],
+        "flowFileExpiration": "0 sec",
+        "backPressureDataSizeThreshold": "1 GB",
+        "backPressureObjectThreshold": "1600",
+        "bends": [],
+        "prioritizers": [],
+        "loadBalanceStrategy": "ROUND_ROBIN",
+        "loadBalancePartitionAttribute": "",
+        "loadBalanceCompression": "DO_NOT_COMPRESS"
+    }
+}

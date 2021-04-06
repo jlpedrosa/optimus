@@ -1,0 +1,51 @@
+{
+    "component": {
+        "type": "org.apache.nifi.processors.standard.GenerateFlowFile",
+        "name": "GenerateFlowFile",
+        "bundle": {
+            "group": "org.apache.nifi",
+            "artifact": "nifi-standard-nar",
+            "version": "1.12.1"
+        },
+        "position": {
+            "x": -1040.0,
+            "y": 520.0
+        },
+        "config": {
+            "properties": {
+                "File Size": "2KB",
+                "Batch Size": "180",
+                "Data Format": "Text",
+                "Unique FlowFiles": "false",
+                "generate-ff-custom-text": null,
+                "character-set": "UTF-8",
+                "mime-type": null
+            },
+            "schedulingPeriod": "1 sec",
+            "schedulingStrategy": "TIMER_DRIVEN",
+            "executionNode": "PRIMARY",
+            "penaltyDuration": "0 sec",
+            "yieldDuration": "0 sec",
+            "bulletinLevel": "WARN",
+            "runDurationMillis": 0,
+            "concurrentlySchedulableTaskCount": 2,
+            "comments": "",
+            "lossTolerant": false,
+            "defaultConcurrentTasks": {
+                "TIMER_DRIVEN": "1",
+                "EVENT_DRIVEN": "0",
+                "CRON_DRIVEN": "1"
+            },
+            "defaultSchedulingPeriod": {
+                "TIMER_DRIVEN": "0 sec",
+                "CRON_DRIVEN": "* * * * * ?"
+            },
+            "autoTerminatedRelationships": []
+        }
+    },
+    "revision": {
+        "clientId": "919dcbdd-0177-1000-ecdf-2569cafc352f",
+        "version": 1
+    },
+    "disconnectedNodeAcknowledged": false
+}

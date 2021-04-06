@@ -1,0 +1,48 @@
+{
+    "revision": {
+        "clientId": "91b329ff-0177-1000-5933-206d6d6e3263",
+        "version": 0
+    },
+    "disconnectedNodeAcknowledged": false,
+    "component": {
+        "name": "CompressContent",
+        "type": "org.apache.nifi.processors.standard.CompressContent",
+        "bundle": {
+            "group": "org.apache.nifi",
+            "artifact": "nifi-standard-nar",
+            "version": "1.12.1"
+        },
+        "position": {
+            "x": -304.0,
+            "y": 512.0
+        },
+        "config": {
+            "schedulingPeriod": "0 sec",
+            "schedulingStrategy": "TIMER_DRIVEN",
+            "executionNode": "ALL",
+            "penaltyDuration": "2 sec",
+            "yieldDuration": "1 sec",
+            "bulletinLevel": "WARN",
+            "runDurationMillis": 0,
+            "concurrentlySchedulableTaskCount": 30,
+            "comments": "",
+            "lossTolerant": false,
+            "defaultConcurrentTasks": {
+                "TIMER_DRIVEN": "1",
+                "EVENT_DRIVEN": "0",
+                "CRON_DRIVEN": "1"
+            },
+            "defaultSchedulingPeriod": {
+                "TIMER_DRIVEN": "0 sec",
+                "CRON_DRIVEN": "* * * * * ?"
+            },
+            "autoTerminatedRelationships": [],
+            "properties": {
+                "Mode": "compress",
+                "Compression Format": "bzip2",
+                "Compression Level": "9",
+                "Update Filename": "false"
+            }
+        }       
+    }
+}
